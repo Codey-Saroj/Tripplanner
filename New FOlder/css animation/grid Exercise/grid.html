@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+      .container {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        row-gap: 5rem;
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5rem;
+      }
+      .item {
+        background-color: rgb(223, 189, 139);
+        border: 2px solid black;
+        padding: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">ram</div>
+      <div class="item">ram</div>
+      <div class="item">ram</div>
+      <div class="item">ram</div>
+      <div class="item">ram</div>
+      <div class="item">ram</div>
+    </div>
+  </body>
+</html>

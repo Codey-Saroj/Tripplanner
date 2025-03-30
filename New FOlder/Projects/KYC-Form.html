@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital E-KYC forum</title>
+    <style>
+  .container {
+  width: 700px;
+  margin: 0 auto; /* Centers horizontally */
+  display: flex;
+  flex-direction: column; /* Ensures elements inside stack vertically */
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Aligns items horizontally */
+  min-height: 100vh; /* Allows content to expand beyond 100vh if needed */
+  overflow-y: auto; /* Adds vertical scrolling if content overflows */
+  padding: 20px; /* Optional: Adds padding for better spacing */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <header><h1>Digital E-KYC Forum</h1></header>
+        <hr />
+        <section>
+          <h2>A.Identity Details</h2>
+          <p>1.Name Of The Applicant:</p>
+          <input
+            type="text"
+            id="Name"
+            name="Name Of The Applicant"
+            placeholder="First Name.."
+          />
+          <input
+            type="text"
+            id="Name"
+            name="Name Of The Applicant"
+            placeholder="Last Name.."
+          />
+
+          <p>2.Fathers/Spouse Name:</p>
+          <input
+            type="text"
+            id="Father Name"
+            name="Fathers/Spouse Name"
+            placeholder="First Name.."
+          />
+          <input
+            type="text"
+            id=" Father Name"
+            name="Fathers/Spouse Name"
+            placeholder="Last Name.."
+          />
+
+          <fieldset>
+            <legend><p>3.Select Your Gender:</p></legend>
+            <input type="radio" id="male" name="Gender" />
+            <label for="male">Male:</label>
+            <input type="radio" id="Female" name="Gender" />
+            <label for="Female">Female:</label>
+            <input type="radio" id="Other" name="Gender" />
+            <label for="Other">Other:</label>
+          </fieldset>
+
+          <p>4.Select Your Martial Status:</p>
+          <input type="radio" id="Single" name="Martial Status" />
+          <label for="Single">Single:</label>
+          <input type="radio" id="Married" name="Martial Status" />
+          <label for="Married">Married:</label>
+
+          <p>5.Select Date of Birth:</p>
+          <input type="date" id="Datepicker" name="Date" />
+
+          <p>6.Select Your Nationality:</p>
+          <select name="" id="Select Your Nationality:">
+            <option value="Empty" disabled selected>Nationality..</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Islam">Islam</option>
+            <option value="Christanity">christanity</option>
+            <option value="Jain">Jain</option>
+          </select>
+          <p>7.Enter E-mail ID:</p>
+          <input type="email" id="email" placeholder="....@gmail.com" />
+          <p>8.Select Proof Of Identity:</p>
+          <select name="Id Proof" id="Id Proof">
+            <option value="">Proofs...</option>
+            <option value="UID">UID</option>
+            <option value="PassPort">PassPort</option>
+            <option value="Voter ID">Voter ID</option>
+            <option value="Visa">Visa</option>
+          </select>
+          <input type="text" placeholder="Enter YOur identity Number.." />
+        </section>
+        <hr />
+        <section>
+          <div>
+            <h2>B.Address Details:</h2>
+            <p>1.Resident Details:</p>
+            <input type="text" placeholder="House No.." />
+            <input type="text" placeholder="Street Mark.." />
+            <br>
+            <br /><input type="text" placeholder="Town/Village" />
+            <input type="text" placeholder="City/District" />
+
+            <p>Select your State:</p>
+            <select id="stateSelect" name="state">
+              <option value="West Bengal">West Bengal</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+            </select>
+            <input type="text" placeholder="pincode" />
+          </div>
+          <p>COntact Number:</p>
+          <input type="text" placeholder="12345 67809" />
+          <p>3.E-mail Id:</p>
+          <input type="email" placeholder="....@gmil.com" />
+          <p>4.Address of Pr0of</p>
+          <select name="Id Proof" id="Id Proof">
+            <option value="">Address Proofs...</option>
+            <option value="Latest Gas Bill">Latest Gas Bill</option>
+            <option value="Latest Electricity bill">
+              Latest Electricity bill
+            </option>
+            <option value="Ration Card">Ration Card</option>
+            <option value="Other">Other</option>
+          </select>
+          <input type="file" />
+        </section>
+        <hr />
+        <section>
+          <h2>C.Bank Account Details</h2>
+          <p>1.Select your bank:</p>
+          <select id="bankSelect" name="bank">
+            <option value="">Your Bank</option>
+            <option value="bank of Jhansi">Bank of Jhansi</option>
+            <option value="bank of Allabad">Bank of Allabad</option>
+            <option value="bank of Baroda">Bank of Baroda</option>
+            <p>2.Account No:</p>
+            <input type="text" placeholder="Account No.." />
+            <p>3.IFSC COde:</p>
+            <input type="text" placeholder="Ifsc code..." />
+            <p>4.Account Holder Name:</p>
+            <input type="text" placeholder="A/c Name..." />
+          </select>
+        </section>
+        <hr />
+        <section>
+          <h2>D.Declaration/Terms And Condition</h2>
+          <p>
+            I herby declar that the information in this for are correct
+            according to my best of knowledge and if Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Eveniet, numquam?anything goes wrong i
+            may/not be obliged to legal issues.
+          </p>
+          <button>Reset</button>
+          <button>Submit</button>
+        </section>
+      </form>
+      <hr>
+      <table><tr>
+<td><footer><p> &#174 Registered  &#169 copyright issue By Govt of India....</p></footer></td>
+
+</td>
+      </tr></table>
+      
+    </div>
+  </body>
+</html>

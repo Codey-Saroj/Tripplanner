@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>order card</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      background-color: rgb(122, 191, 168);
+    }
+    .container {
+      margin: auto;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+    }
+    .ordercard {
+      width: 400px;
+      height: 80vh;
+      background-color: white;
+      border-radius: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .ordercard > img {
+      object-fit: cover;
+      width: 100%;
+      height: 150px;
+      border-radius: 1.2rem 1.2rem 0 0;
+    }
+    .ordercard,
+    h3,
+    div,
+    button {
+      margin-bottom: 20px;
+    }
+    #head {
+      margin-top: 35px;
+      font-style: bold;
+      font-size: 1.5rem;
+    }
+    #para {
+      text-align: center;
+      width: 80%;
+    }
+    #btn {
+      width: 90%;
+      padding: 15px;
+      border-radius: 0.5rem;
+      background-color: rgb(75, 28, 75);
+      color: white;
+    }
+    .des {
+      padding-top:20px ;
+      width: 90%;
+      height: 10vh;
+      background-color: rgba(219, 233, 245, 0.897);
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;border-radius: 0.6rem;
+    }
+    .des img {
+      height: 40px;
+      width: 40px;
+      object-fit: contain;
+    }
+    .pdt-details{
+      margin-right: 80px;
+    }
+    #cancel{
+      padding: 10px;
+    }
+    #cancel a{
+      color: black;text-decoration: none;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="ordercard">
+        <img src="watch.jpg" alt="pdt" />
+        <h3 id="head">Order Summary</h3>
+        <div id="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odio,
+          ipsa blanditiis quibusdam.
+        </div>
+        <div class="des">
+          <div class="icon"><img src="icons8-music-note-100.png" alt="" /></div>
+          <div class="pdt-details">
+            <h5>Annual Plan</h5>
+            <p>$99.9</p>
+          </div>
+          <div class="div"><a href="#">Change</a></div>
+        </div>
+        <button id="btn">Proceed to Payment</button>
+        <div id="cancel"><strong><a href="#">Cancel Order</a></strong></div>
+      </div>
+    </div>
+  </body>
+</html>

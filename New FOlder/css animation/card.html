@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(117, 199, 172);
+    }
+    .container{
+      display: flex;justify-content: center;align-items: center;height: 100vh;
+    }
+    .box > img {
+      width: 97%;
+      height: 95%;
+      display: block;border-radius: 1.5rem;
+    }
+    .box {
+      width: 350px;
+      height: 500px;
+      background-color: white;
+      border-radius: 1.5rem;display: grid;place-items: center;margin: auto;
+    }
+    .box ,h2,p{
+      text-align: left;padding: 0 5px 0 5px;
+    }
+    #heading{margin: 0;}#padding{margin: 0;}
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="download.png" alt="Qr" />
+        <h2 id="heading">Improve your front end skills by building projects</h2>
+        <p id="para">
+          scan the Qr code to visit frontend memeber and take your coding skill
+          to next level
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    .carosel1 {
+      width: 99vw;
+      height: 70vh;
+      background-size: 100% 100%;
+      box-shadow: 8px 8px 15px rgb(0, 0, 0, 0.25);
+      animation: BgAnimation 20s linear infinite;
+      animation-delay: 0.1s;
+      border-radius: 0 0 5px 5px;
+      position: relative;
+    }
+    .hero-content1{
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      display: flex;flex-direction: column;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      
+    }
+    .hero-content1 h1{
+      font-size: 2.5rem;
+    }
+    .hero-content1 p{
+      font-size: 1.5rem;
+    }
+
+
+    /* body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        .destination-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            transition: 0.3s;
+            overflow: hidden;
+           display: grid;place-items: center;margin: auto;
+           margin: 50px;
+           
+        }
+
+        .destination-card img {
+            width: 40%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .destination-content {
+            width: 100%;
+            padding-left: 20px;
+        }
+
+        .destination-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 0;
+            color: #d63384;
+        }
+
+        .destination-overview {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .read-more-check {
+            display: none;
+        }
+
+        .extra-content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .read-more-check:checked ~ .extra-content {
+            display: block;
+        }
+
+        .read-more-check:checked ~ .destination-card {
+            max-height: 800px;
+        }
+
+        .read-more-btn, .read-less-btn {
+            display: inline-block;
+            background: #ff6600;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-less-btn {
+            display: none;
+        }
+
+        .read-more-check:checked ~ .read-more-btn {
+            display: none;
+        }
+
+        .read-more-check:checked ~ .read-less-btn {
+            display: inline-block;
+        }
+
+        /* Extra Images Section */
+        .extra-images {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .extra-images img {
+            width: 30%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+    @keyframes BgAnimation {
+      0% {
+        background-image: url(/project2/images/s9.jpg);
+     
+      }
+      20% {
+        
+        background-image: url(/project2/images/s10.jpg);
+      }
+      40% {
+        background-image: url(/project2/images/s11.jpg);
+      }
+      60% {
+        background-image: url(/project2/images/s9.jpg);
+      }
+      80% {
+        background-image: url(/project2/images/s5.jpg);
+      }
+      100% {
+        background-image: url(/project2/images/s8.jpg);
+      }
+    }
+    @media (max-width: 768px) {
+            .destination-card {
+                padding: 15px;
+            }
+            .destination-title {
+                font-size: 20px;
+            }
+            .extra-images img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+  </style>
+  <body>
+    <nav class="nav">
+        <div class="logo">
+          <h3 id="logo-head">
+              <a href="index.html">Incredible <img src="/project2/images/india.webp" alt="logo" /></a>
+          </h3>
+          <p class="logo-subtitle">Travel Guide</p>
+      </div>
+      
+        <ul class="navs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destination.html">Destination</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+       <!-- Tagline Section -->
+      <div class="tagline">
+        Incredible India Travel Guide: "Journey Beyond Limits"
+      </div>
+  
+    <div class="carosel1"></div>
+    <div class="hero-content1">
+      <h1 >Welcome to Incredible India Travel Guide</h1>
+      <p>
+        Discover must-visit places, local tips, and cultural experiences!
+      </p>
+      <button class="btn">Plan Your Trip!</button>
+    </div>
+  
+ 
+   
+<div class="destination-card">
+       
+        <!-- <img src="images/s10.jpg" alt="Jaipur - The Pink City"> -->
+        
+        <div class="destination-content">
+            <h3 class="destination-title">🏰 Jaipur, Rajasthan – The Pink City</h3>
+            
+            <p class="destination-overview">
+                Jaipur, the capital of Rajasthan, is famous for its royal palaces, vibrant bazaars, and rich history. Known as the Pink City, its grand forts and lively streets showcase India's glorious past and architectural brilliance.
+            </p>
+            <input type="checkbox" id="read-more-jaipur" class="read-more-check">
+            <label for="read-more-jaipur" class="read-more-btn">Read More</label>
+
+            <div class="extra-content">
+                <p><strong>📅 Best Time to Visit:</strong> October–March</p>
+                
+                <p><strong>📍 Must-Visit Places:</strong></p>
+                <ul>
+                    <li><strong>Hawa Mahal:</strong> The ‘Palace of Winds’ with 953 windows for natural ventilation.</li>
+                    <li><strong>City Palace:</strong> A luxurious palace with museums showcasing royal heritage.</li>
+                    <li><strong>Jantar Mantar:</strong> An astronomical marvel and UNESCO site.</li>
+                  
+                    <li><strong>Jaipur Markets:</strong> Johari Bazaar (jewelry), Bapu Bazaar (mojris & textiles).</li>
+                </ul>
+
+                <p><strong>🍽 Must-Try Food:</strong></p>
+                <ul>
+                    <li>Dal Baati Churma</li>
+                    <li>Ghewar</li>
+                    <li>Pyaaz Kachori</li>
+                    <li>Laal Maas (spicy meat curry)</li>
+                </ul>
+
+                <p><strong>🚀 Travel Tips:</strong></p>
+                <ul>
+                    <li>Shop for authentic Rajasthani handicrafts.</li>
+                    <li>Hire a local guide for an in-depth historical experience.</li>
+                    <li>Visit early in the morning to avoid crowds.</li>
+                </ul>
+
+                <!-- Extra Images -->
+                <div class="extra-images">
+                    <img src="images/s4.jpg" alt="Amber Fort">
+                    <img src="images/s2.jpg" alt="Hawa Mahal">
+                    <img src="images/s1.jpg" alt="Jaipur Market">
+                </div>
+            </div>
+
+            <label for="read-more-jaipur" class="read-less-btn">Show Less</label>
+        </div>
+    </div>
+
+   <div class="destination-card">
+    <div class="destination-content">
+        <h3 class="destination-title">✦ Goa – The Beach Paradise</h3>
+        <p class="destination-overview">
+            Goa is renowned for its stunning beaches, vibrant nightlife, and Portuguese heritage. Whether it's the serene beaches of South Goa or the lively clubs in North Goa, there's something for every traveler.
+        </p>
+        <input type="checkbox" id="read-more-goa" class="read-more-check">
+        <label for="read-more-goa" class="read-more-btn">Read More</label>
+        <div class="extra-content">
+            <p><strong>🏝 Best Time to Visit:</strong> November–February</p>
+            <p><strong>📍 Must-Visit Places:</strong></p>
+            <ul>
+                <li>Baga & Anjuna Beach</li>
+                <li>Fort Aguada</li>
+                <li>Basilica of Bom Jesus</li>
+                <li>Dudhsagar Waterfalls</li>
+            </ul>
+            <p><strong>🍽 Must-Try Food:</strong> Seafood, Bebinca, Pork Vindaloo</p>
+            <div class="extra-images">
+              <img src="images/s5.jpg" alt="Amber Fort">
+              <img src="images/s6.jpg" alt="Hawa Mahal">
+              <img src="images/s8.jpg" alt="Jaipur Market">
+          </div>
+        </div>
+        <label for="read-more-goa" class="read-less-btn">Show Less</label>
+    </div>
+</div>
+<div class="destination-card">
+  <div class="destination-content">
+      <h3 class="destination-title">🏞 Varanasi – The Spiritual Capital</h3>
+      <p class="destination-overview">
+          Varanasi, one of the world's oldest cities, is known for its sacred ghats, temples, and the mesmerizing Ganga Aarti.
+      </p>
+      <input type="checkbox" id="read-more-varanasi" class="read-more-check">
+      <label for="read-more-varanasi" class="read-more-btn">Read More</label>
+      <div class="extra-content">
+          <p><strong>🏝 Best Time to Visit:</strong> October–March</p>
+          <p><strong>📍 Must-Visit Places:</strong></p>
+          <ul>
+              <li>Kashi Vishwanath Temple</li>
+              <li>Dashashwamedh Ghat</li>
+              <li>Manikarnika Ghat</li>
+              <li>Sarnath</li>
+          </ul>
+          <p><strong>🍽 Must-Try Food:</strong> Kachori Sabzi, Malaiyyo</p>
+          <div class="extra-images">
+            <img src="images/s9.jpg" alt="Amber Fort">
+            <img src="images/s10.jpg" alt="Hawa Mahal">
+            <img src="images/s11.jpg" alt="Jaipur Market">
+        </div>
+      </div>
+      <label for="read-more-varanasi" class="read-less-btn">Show Less</label>
+  </div>
+</div>
+
+<div class="destination-card">
+    <div class="destination-content">
+        <h3 class="destination-title">🏯 Mysore – The City of Palaces</h3>
+        <p class="destination-overview">
+            Known for its rich cultural heritage and royal legacy, Mysore is home to the grand Mysore Palace and vibrant Dasara festival.
+        </p>
+        <input type="checkbox" id="read-more-mysore" class="read-more-check">
+        <label for="read-more-mysore" class="read-more-btn">Read More</label>
+        <div class="extra-content">
+            <p><strong>🏝 Best Time to Visit:</strong> October–February</p>
+            <p><strong>📍 Must-Visit Places:</strong></p>
+            <ul>
+                <li>Mysore Palace</li>
+                <li>Brindavan Gardens</li>
+                <li>Chamundi Hills</li>
+                <li>St. Philomena’s Church</li>
+            </ul>
+            <p><strong>🍽 Must-Try Food:</strong> Mysore Pak, Bisi Bele Bath</p>
+            <div class="extra-images">
+              <img src="images/s13.jpg" alt="Amber Fort">
+              <img src="images/s14.jpg" alt="Hawa Mahal">
+              <img src="images/s15.jpg" alt="Jaipur Market">
+          </div>
+        </div>
+        <label for="read-more-mysore" class="read-less-btn">Show Less</label>
+    </div>
+</div>
+
+<div class="destination-card">
+  <div class="destination-content">
+      <h3 class="destination-title">✨ Kerala – God's Own Country</h3>
+      <p class="destination-overview">
+          Kerala, known for its lush landscapes, serene backwaters, and Ayurvedic treatments, offers a perfect mix of relaxation and adventure.
+      </p>
+      <input type="checkbox" id="read-more-kerala" class="read-more-check">
+      <label for="read-more-kerala" class="read-more-btn">Read More</label>
+      <div class="extra-content">
+          <p><strong>📅 Best Time to Visit:</strong> September–March</p>
+          <p><strong>📍 Must-Visit Places:</strong></p>
+          <ul>
+              <li><strong>Alleppey:</strong> Famous for backwater houseboat cruises.</li>
+              <li><strong>Munnar:</strong> Stunning tea gardens and hill station vibes.</li>
+              <li><strong>Kumarakom:</strong> Bird sanctuary and backwater resorts.</li>
+              <li><strong>Kovalam:</strong> A beautiful beach town with lighthouses.</li>
+              <li><strong>Thekkady:</strong> Home to Periyar Wildlife Sanctuary.</li>
+          </ul>
+          <p><strong>🍽 Must-Try Food:</strong> Appam with stew, Puttu & Kadala Curry, Karimeen Pollichathu.</p>
+          <p><strong>🚀 Travel Tips:</strong> Try an authentic Ayurvedic massage, explore village life, and attend a Kathakali dance performance.</p>
+          <div class="extra-images">
+              <img src="images/kerala1.jpg" alt="Backwaters">
+              <img src="images/kerala2.jpg" alt="Tea Gardens">
+              <img src="images/kerala3.jpg" alt="Beach">
+          </div>
+      </div>
+      <label for="read-more-kerala" class="read-less-btn">Show Less</label>
+  </div>
+</div>
+
+<div class="destination-card">
+  <div class="destination-content">
+      <h3 class="destination-title">🏞️ Rishikesh – The Yoga Capital</h3>
+      <p class="destination-overview">
+          Rishikesh, a spiritual and adventure hub, offers yoga retreats, Ganga aarti, and thrilling river rafting experiences.
+      </p>
+      <input type="checkbox" id="read-more-rishikesh" class="read-more-check">
+      <label for="read-more-rishikesh" class="read-more-btn">Read More</label>
+      <div class="extra-content">
+          <p><strong>📅 Best Time to Visit:</strong> October–April</p>
+          <p><strong>📍 Must-Visit Places:</strong></p>
+          <ul>
+              <li><strong>Lakshman Jhula:</strong> Iconic suspension bridge over the Ganges.</li>
+              <li><strong>Parmarth Niketan:</strong> Famous for Ganga Aarti.</li>
+              <li><strong>Neelkanth Mahadev:</strong> Sacred Shiva temple.</li>
+              <li><strong>Shivpuri:</strong> Best spot for white-water rafting.</li>
+              <li><strong>Beatles Ashram:</strong> A peaceful retreat with graffiti art.</li>
+          </ul>
+          <p><strong>🍽 Must-Try Food:</strong> Aloo Puri, Masala Chai, Ayurvedic meals.</p>
+          <p><strong>🚀 Travel Tips:</strong> Try sunrise meditation, avoid plastic near the river, and take a yoga retreat.</p>
+          <div class="extra-images">
+              <img src="images/rishikesh1.jpg" alt="Ganga Aarti">
+              <img src="images/rishikesh2.jpg" alt="Lakshman Jhula">
+              <img src="images/rishikesh3.jpg" alt="River Rafting">
+          </div>
+      </div>
+      <label for="read-more-rishikesh" class="read-less-btn">Show Less</label>
+  </div>
+</div>
+
+<div class="destination-card">
+  <div class="destination-content">
+      <h3 class="destination-title">❄️ Leh-Ladakh – The Land of High Passes</h3>
+      <p class="destination-overview">
+          Known for its breathtaking landscapes, Buddhist monasteries, and thrilling road trips, Leh-Ladakh is an adventurer’s paradise.
+      </p>
+      <input type="checkbox" id="read-more-leh" class="read-more-check">
+      <label for="read-more-leh" class="read-more-btn">Read More</label>
+      <div class="extra-content">
+          <p><strong>📅 Best Time to Visit:</strong> May–September</p>
+          <p><strong>📍 Must-Visit Places:</strong></p>
+          <ul>
+              <li><strong>Pangong Lake:</strong> Crystal-clear blue lake.</li>
+              <li><strong>Magnetic Hill:</strong> Optical illusion of a gravity-defying road.</li>
+              <li><strong>Thiksey Monastery:</strong> A stunning Tibetan monastery.</li>
+              <li><strong>Nubra Valley:</strong> Famous for sand dunes and Bactrian camels.</li>
+              <li><strong>Khardung La:</strong> One of the highest motorable roads in the world.</li>
+          </ul>
+          <p><strong>🍽 Must-Try Food:</strong> Thukpa, Momos, Butter Tea.</p>
+          <p><strong>🚀 Travel Tips:</strong> Acclimatize to avoid altitude sickness, carry warm clothes, and ride a Royal Enfield on the mountain roads.</p>
+          <div class="extra-images">
+              <img src="images/leh1.jpg" alt="Pangong Lake">
+              <img src="images/leh2.jpg" alt="Nubra Valley">
+              <img src="images/leh3.jpg" alt="Thiksey Monastery">
+          </div>
+      </div>
+      <label for="read-more-leh" class="read-less-btn">Show Less</label>
+  </div>
+</div>
+
+<div class="destination-card">
+  <div class="destination-content">
+      <h3 class="destination-title">🌊 Andaman & Nicobar – Tropical Paradise</h3>
+      <p class="destination-overview">
+          A tropical haven with white sandy beaches, coral reefs, and a rich colonial history, Andaman & Nicobar is a dream getaway.
+      </p>
+      <input type="checkbox" id="read-more-andaman" class="read-more-check">
+      <label for="read-more-andaman" class="read-more-btn">Read More</label>
+      <div class="extra-content">
+          <p><strong>📅 Best Time to Visit:</strong> November–April</p>
+          <p><strong>📍 Must-Visit Places:</strong></p>
+          <ul>
+              <li><strong>Radhanagar Beach:</strong> Rated one of Asia’s best beaches.</li>
+              <li><strong>Cellular Jail:</strong> Historic site with light & sound show.</li>
+              <li><strong>Havelock Island:</strong> Famous for scuba diving and snorkeling.</li>
+          </ul>
+          <p><strong>🍽 Must-Try Food:</strong> Seafood, Coconut Prawn Curry.</p>
+          <p><strong>🚀 Travel Tips:</strong> Carry waterproof bags, try scuba diving, and avoid littering on beaches.</p>
+          <div class="extra-images">
+              <img src="images/andaman1.jpg" alt="Radhanagar Beach">
+              <img src="images/andaman2.jpg" alt="Cellular Jail">
+              <img src="images/andaman3.jpg" alt="Scuba Diving">
+          </div>
+      </div>
+      <label for="read-more-andaman" class="read-less-btn">Show Less</label>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer-container">
+      <div class="footer-about">
+          <h3>Incredible India Travel Guide</h3>
+          <p>Explore the best destinations, travel tips, and cultural insights to make your journey unforgettable.</p>
+      </div>
+      <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Destinations</a></li>
+              <li><a href="#">Travel Tips</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+      <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: info@incredibleindia.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <p>Follow us:</p>
+          <div class="social-icons">
+              <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+              <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+              <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+          </div>
+      </div>
+  </div>
+  <p class="footer-copy">© 2025 Incredible India Travel Guide | All Rights Reserved</p>
+</footer>
+
+    
+
+</body>
+</html>
