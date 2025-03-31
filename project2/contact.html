@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      h2 {
+        color: #0a3d62;
+        margin-bottom: 15px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      button {
+        background: #0a3d62;
+        color: white;
+        padding: 12px 15px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        width: 100%;
+      }
+
+      button:hover {
+        background: #f4c542;
+        color: #0a3d62;
+      }
+
+      /* Google Map */
+      .map-container {
+        margin-top: 20px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 60vw;
+      }
+
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <h3 id="logo-head">
+          <a href="index.html"
+            >Incredible <img src="/project2/images/india.webp" alt="logo"
+          /></a>
+        </h3>
+        <p class="logo-subtitle">Travel Guide</p>
+      </div>
+
+      <ul class="navs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="travel-tips.html">Travel Tips</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Tagline Section -->
+    <div class="tagline">
+      Incredible India Travel Guide: "Journey Beyond Limits"
+    </div>
+
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have a question? Reach out to us!</p>
+
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Google Map -->
+    </div>
+    <div style="display: flex; justify-content: center; margin-bottom: 20px">
+      <div class="map-container">
+        <h2>Find Us Here</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.3365162739137!2d78.18957357555205!3d29.998492274946727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390938a8f98f441b%3A0xc85e7e0d4ebb1b46!2sDev%20Sanskriti%20Vishwavidyalaya!5e0!3m2!1sen!2sin!4v1743398391022!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>Incredible India Travel Guide</h3>
+          <p>
+            Explore the best destinations, travel tips, and cultural insights to
+            make your journey unforgettable.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Travel Tips</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Email: info@incredibleindia.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <p>Follow us:</p>
+          <div class="social-icons">
+            <a href="#"
+              ><img src="images/facebook-icon.png" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/instagram-icon.png" alt="Instagram"
+            /></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter" /></a>
+          </div>
+        </div>
+      </div>
+      <p class="footer-copy">
+        © 2025 Incredible India Travel Guide | All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>

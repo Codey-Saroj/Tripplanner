@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #0a3d62;
+            margin-bottom: 20px;
+        }
+
+        .gallery-container {
+            text-align: center;
+            padding: 40px;
+            background-color: #f8f9fa;
+        }
+
+        /* Filter Buttons */
+        .gallery-filters {
+            margin-bottom: 20px;
+        }
+
+        .filter-btn {
+            padding: 8px 15px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: #0a3d62;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background-color: #f4c542;
+            color: #0a3d62;
+        }
+
+        /* Grid Layout */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+            background: white;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Image Text */
+        .gallery-text {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #0a3d62;
+        }
+
+        .gallery-subtext {
+            font-size: 14px;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+          <h3 id="logo-head">
+              <a href="index.html">Incredible <img src="/project2/images/india.webp" alt="logo" /></a>
+          </h3>
+          <p class="logo-subtitle">Travel Guide</p>
+      </div>
+      
+        <ul class="navs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destination.html">Destination</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="tagline">
+        Incredible India Travel Guide: "Journey Beyond Limits"
+      </div>
+
+    <section class="gallery-container">
+        <h2>Explore India Through Pictures</h2>
+
+        <!-- Filter Options -->
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="heritage">Heritage</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+            <button class="filter-btn" data-category="adventure">Adventure</button>
+            <button class="filter-btn" data-category="food">Food</button>
+        </div>
+
+        <!-- Image Grid -->
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/s1.webp" alt="Taj Mahal" class="gallery-img">
+                <p class="gallery-text">Taj Mahal</p>
+                <p class="gallery-subtext">Symbol of Love, Agra</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/s2.webp" alt="Himalayas" class="gallery-img">
+                <p class="gallery-text">Himalayas</p>
+                <p class="gallery-subtext">Snow-capped peaks, Serenity</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/s3.webp" alt="River Rafting" class="gallery-img">
+                <p class="gallery-text">Rishikesh</p>
+                <p class="gallery-subtext">Thrilling River Rafting</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/s4.webp" alt="Street Food" class="gallery-img">
+                <p class="gallery-text">Delhi Street Food</p>
+                <p class="gallery-subtext">Spicy & Delicious Bites</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/s5.webp" alt="Taj Mahal" class="gallery-img">
+                <p class="gallery-text">Taj Mahal</p>
+                <p class="gallery-subtext">Symbol of Love, Agra</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/s6.jpg" alt="Himalayas" class="gallery-img">
+                <p class="gallery-text">Himalayas</p>
+                <p class="gallery-subtext">Snow-capped peaks, Serenity</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/s7.jpg" alt="River Rafting" class="gallery-img">
+                <p class="gallery-text">Rishikesh</p>
+                <p class="gallery-subtext">Thrilling River Rafting</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/s8.webp" alt="Street Food" class="gallery-img">
+                <p class="gallery-text">Delhi Street Food</p>
+                <p class="gallery-subtext">Spicy & Delicious Bites</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/s9.webp" alt="Taj Mahal" class="gallery-img">
+                <p class="gallery-text">Taj Mahal</p>
+                <p class="gallery-subtext">Symbol of Love, Agra</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/s10.webp" alt="Himalayas" class="gallery-img">
+                <p class="gallery-text">Himalayas</p>
+                <p class="gallery-subtext">Snow-capped peaks, Serenity</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/s11.jpg" alt="River Rafting" class="gallery-img">
+                <p class="gallery-text">Rishikesh</p>
+                <p class="gallery-subtext">Thrilling River Rafting</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/s12.jpg" alt="Street Food" class="gallery-img">
+                <p class="gallery-text">Delhi Street Food</p>
+                <p class="gallery-subtext">Spicy & Delicious Bites</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Incredible India Travel Guide</h3>
+                <p>Explore the best destinations, travel tips, and cultural insights to make your journey unforgettable.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Travel Tips</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@incredibleindia.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Follow us:</p>
+                <div class="social-icons">
+                    <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copy">© 2025 Incredible India Travel Guide | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
